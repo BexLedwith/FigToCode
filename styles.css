@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #565656;
+  --primary-color: #008ad8;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.container {
+  margin: 2.8em;
+}
+
+.headings p {
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+.filter,
+.labels {
+  display: none;
+}
+
+.search {
+  border: none;
+  padding: 0.8em;
+  border-radius: 2em;
+  background: white url("search.svg") no-repeat right 0.8em center;
+  width: 100%;
+}
+
+.search:focus {
+  outline: thin dotted;
+}
