@@ -5,45 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <title>Drone Page</title>
   </head>
   <body>
+    <div class="top-bg-container">
+      <!--container for bg absolute -->
+      <div class="streaks"></div>
+      <div class="purple"></div>
+    </div>
+
     <div class="container">
-      <header>
-        <div class="logo">
-          <h3>drone.series</h3>
-        </div>
-        <nav class="nav-bar">
-          <p>home</p>
-          <p>races</p>
-          <p>register</p>
-          <p>faq</p>
-          <p>contact</p>
-        </nav>
-      </header>
+      <nav>
+        <a href="#" class="logo"><span>Drone</span>.Series</a>
+
+        <img src="menu.svg" class="menu-btn" />
+
+        <ul>
+          <li class="exit-btn">
+            <img src="exit.svg" />
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Races</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
       <main>
-        <section class="page-1 text">
-          <h1>Drone Racing Gone Wild</h1>
-          <p>
-            Register now for the ultimate drone racing event. 5 mile courses and
-            over $10 million in prize money!
-          </p>
-        </section>
-        <section class="page-1 image">
-          <img src="drone.png" />
-        </section>
+        <div class="content">
+          <div class="type">
+            <h1>Drone Racing Gone Wild</h1>
+            <p>
+              Register now for the ultimate drone racing event. 5 mile courses
+              and over $10 million in prize money!
+            </p>
+          </div>
 
-        <section class="page-2">
-          <p class="quote">
-            "The stadium is simply unreal. scrimba hall will make this the best
-            drone racing event ever, period."
-          </p>
-          <p class="guy">anonymous guy</p>
-        </section>
+          <div class="drone-container">
+            <img src="blur.png" class="blur" />
+            <img src="drone.png" class="drone" />
+          </div>
+        </div>
+      </main>
 
-        <section class="page-3">
+      <section class="quote">
+        <blockquote>
+          "The stadium is simply unreal. scrimba hall will make this the best
+          drone racing event ever, period."
+        </blockquote>
+        <cite">anonymous guy</cite>
+      </section>
+
+      <section class="gallery">
+        <div class="footage-content">
           <h1>Last year's footage</h1>
           <p>
             With over 5,000 participants, 2020 featured some of the most amazing
@@ -53,16 +75,15 @@
             In 2021, we're about to double the excitement with 10,000 race
             participants and 100,000 fans!
           </p>
-
-          <section class="gallery">
-            <img src="footage-1.jpg" />
-            <img src="footage-2.jpg" />
-            <img src="footage-3.jpg" />
-            <img src="footage-4.jpg" />
-            <img src="footage-5.jpg" />
-          </section>
-        </section>
-      </main>
+        </div>
+        <div class="gallery-container">
+          <img src="footage-1.jpg" />
+          <img src="footage-2.jpg" />
+          <img src="footage-3.jpg" />
+          <img src="footage-4.jpg" />
+          <img src="footage-5.jpg" />
+        </div>
+      </section>
 
       <footer>
         <h2>Register for the event!</h2>

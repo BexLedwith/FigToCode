@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.063rem;
+}
+
+.content {
+  background-image: url("streaks.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: block;
+  text-align: center;
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+}
+
+.type {
+  padding: 8.25em 2.063em 29.813em 2.375em;
+}
+
+.type p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6em;
+  padding: 1.75em 1.438em 5.688em 1.125em;
+}
