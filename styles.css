@@ -33,6 +33,37 @@ h1 {
   line-height: 92%;
 }
 
+nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 66%;
+  background-color: #363b4e;
+  height: 100vh;
+  z-index: 2;
+  padding: 2em 0;
+  transform: translateX(100%);
+  transition: tranform 0.3s;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0.4em 1.5em;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.exit-btn {
+  text-align: right;
+}
+
+.exit-btn img {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
 .menu-btn {
   width: 2.5em;
   cursor: pointer;
@@ -122,7 +153,4 @@ h1 {
   from {
     opacity: 0;
   }
-}
-nav ul {
-  display: none;
 }
