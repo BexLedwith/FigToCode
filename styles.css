@@ -21,13 +21,16 @@ ul {
 img {
   width: 100%;
 }
-header {
-  position: absolute;
-  margin-top: 0;
+
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
-  font-size: 3.063rem;
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 92%;
 }
 
 .menu-btn {
@@ -58,14 +61,52 @@ h1 {
   background: #7988be;
 }
 
-.type {
-  padding: 8.25em 2.063em 29.813em 2.375em;
+.container {
+  margin: 0 1em;
+}
+
+.logo {
+  display: inline-block;
+  background-color: black;
+  padding: 0.2em 0.4em;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.logo span {
+  color: #6889ff;
+}
+
+.content {
+  text-align: center;
+  margin: 8em 3em 0;
+  height: 75vh;
 }
 
 .type p {
   font-family: "Montserrat";
-  font-weight: 400;
   font-size: 1.125rem;
-  line-height: 1.6em;
-  padding: 1.75em 1.438em 5.688em 1.125em;
+  line-height: 141.6%;
+}
+
+.drone-container {
+  position: relative;
+  /* parent container relative, children absolute!! */
+  margin: 5em auto;
+  width: 65%;
+}
+
+.blur,
+.drone {
+  position: absolute;
+  left: 0;
+}
+
+.blur {
+  opacity: 0.5;
+  top: 1em;
+}
+
+nav ul {
+  display: none;
 }
