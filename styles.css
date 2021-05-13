@@ -43,7 +43,7 @@ nav ul {
   z-index: 2;
   padding: 2em 0;
   transform: translateX(100%);
-  transition: tranform 0.3s;
+  transition: transform 0.3s;
 }
 
 nav ul li a {
@@ -82,7 +82,6 @@ nav ul li a {
 
 .streaks {
   background: #b2dd9e url("streaks.jpg");
-  background-repeat: no-repeat;
   background-blend-mode: screen; /* changes how interact with behind it*/
   background-size: cover;
   height: 100vh;
