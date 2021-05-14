@@ -131,6 +131,7 @@ nav ul li a {
 .drone {
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
 .blur {
@@ -226,9 +227,6 @@ h2 {
 }
 
 .gallery-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
   aspect-ratio: 1/1;
   cursor: pointer;
 }
@@ -331,6 +329,7 @@ button {
   .container {
     width: 80%;
     margin: 0 auto;
+    right: 0;
   }
 
   .content {
@@ -370,5 +369,69 @@ button {
   nav ul li a {
     font-size: 1rem;
     padding: 0 1em;
+  }
+
+  /* Section 1 */
+
+  .quote {
+    width: 80%;
+    display: grid;
+    place-content: center;
+  }
+
+  blockquote,
+  cite {
+    width: 50%;
+    justify-self: center;
+  }
+
+  blockquote {
+    font-size: 2rem;
+  }
+
+  /* Section 2 */
+
+  .gallery {
+    display: flex;
+    gap: 4em;
+  }
+
+  .gallery-container {
+    margin-top: -5em;
+    right: 0;
+    z-index: 1;
+  }
+
+  .gallery-container img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 91.6%;
+  }
+
+  /* contact section */
+
+  .cols-2 {
+    display: flex;
+    gap: 3em;
+  }
+
+  .form-container,
+  .other-info {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .other-info {
+    margin-top: 2em;
+  }
+
+  input {
+    padding: 1.5em;
   }
 }
